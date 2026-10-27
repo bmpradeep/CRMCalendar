@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meeting sync</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Meeting sync</h1>
+  <p id="summary">Loading…</p>
+  <label><input id="conflicts-only" type="checkbox"> Conflicts only</label>
+
+  <div class="layout">
+    <table>
+      <thead>
+        <tr>
+          <th>When</th>
+          <th>Meeting</th>
+          <th>Sources</th>
+          <th>Conflicts</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <aside id="detail">
+      <p>Click a meeting. Each field shows the CRM value and the calendar value. A highlighted row is a disagreement.</p>
+    </aside>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
